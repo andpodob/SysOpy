@@ -45,7 +45,7 @@ int runProcessesOnList(char* list, int n, int type) {
         for (int i = 0; i < outputFilesCount; i++) {
             removeWhiteSpaces(outputFileNames[i]);
         }
-    }
+        }
 }
 
 int processList(int type){

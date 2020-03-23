@@ -1,19 +1,15 @@
 //
-// Created by andrz on 3/21/2020.
+// Created by andrz on 3/23/2020.
 //
 
+#include <stdlib.h>
 #include "processmanagement.h"
+#include <string.h>
 
 int main(int argc, char** argv){
-//    int rows, columns;
-//    int** matrix = loadMatrix("matrix", &rows, &columns);
-//
-//    for(int i = 0; i < rows; i++){
-//        for(int j = 0; j < columns-1; j++){
-//            printf("%d,", matrix[i][j]);
-//        }
-//        printf("%d\n", matrix[i][columns-1]);
-//    }
+    if(argc == 4){
+        if(strcmp(argv[3], "SINGLE") == 0)
+            runProcessesOnList(argv[1], atoi(argv[2]), SINGLE);
+    }
 
-    runProcessesOnList("list", 2, SINGLE);
 }
