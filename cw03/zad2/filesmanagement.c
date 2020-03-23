@@ -26,6 +26,7 @@ int** loadMatrix(char* filename, int* rows, int* columns){
     fclose(matrix);
 
     *rows = i-1;
+    *columns = 0;
 
     intMatrix = malloc((*rows)* sizeof(int*));
     for(i = 0; i < *rows; i++){

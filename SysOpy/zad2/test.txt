@@ -1,4 +1,0 @@
-ct 12
-start
-cp a.txt:b.txt f.txt:c.txt f.txt:b.txt a.txt:b.txt a.txt:b.txt a.txt:f.txt a.txt:b.txt a.txt:b.txt a.txt:b.txt a.txt:b.txt a.txt:b.txt a.txt:b.txt
-stop

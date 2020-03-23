@@ -56,9 +56,9 @@ int processList(int type){
     int** intMatrixA = NULL, **intMatrixB = NULL, **intMatrixC = NULL;
     int aRows, aCol, bRows, bCol, cRows, cCol, temp, startingIndex;
     for(int i = 0; i < linesCount; i++){
-        matrixA = strtok(lines[i], " ");
-        matrixB = strtok(NULL, " ");
-        matrixC = strtok(NULL, " ");
+        matrixA = strtok(lines[i], " \r\n");
+        matrixB = strtok(NULL, " \r\n");
+        matrixC = strtok(NULL, " \r\n");
         matrixCwithSuffix = malloc((strlen(matrixC)+10)*sizeof(char));
         strcpy(matrixCwithSuffix, matrixC);
         strcat(matrixCwithSuffix, "_");
