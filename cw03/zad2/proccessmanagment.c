@@ -4,6 +4,7 @@
 
 #include <unistd.h>
 #include <sys/wait.h>
+#include <fcntl.h>
 #include "filesmanagement.h"
 #include "matrixutils.h"
 #include "processmanagement.h"
@@ -14,12 +15,14 @@ char* LIST;
 
 int processList(int outputType);
 void createOutputFiles(char** outputFileNames, int* n);
-
+char* createArgList(char* fileNameBase);
+void runCmd(char** cmd, char* outputFile);
 
 int runProcessesOnList(char* list, int n, int type) {
     LIST = list;
     N = n;
     int outputFilesCount = 0;
+    char** cmd;
     char **outputFileNames = malloc(sizeof(char *) * 100);
     createOutputFiles(outputFileNames, &outputFilesCount);
     int *childPids = malloc(n * sizeof(int));
@@ -45,7 +48,16 @@ int runProcessesOnList(char* list, int n, int type) {
         for (int i = 0; i < outputFilesCount; i++) {
             removeWhiteSpaces(outputFileNames[i]);
         }
+    }
+    if(type == MULTIPLE){
+        for(int i = 0; i < outputFilesCount; i++){
+            cmd = createArgList(outputFileNames[i]);
+            runCmd(cmd, outputFileNames[i]);
+            for(int i = 0; i < N; i++){
+                remove(cmd[i+2]);
+            }
         }
+    }
 }
 
 int processList(int type){
@@ -114,4 +126,40 @@ void createOutputFiles(char** outputFileNames, int* n){
         strcpy(outputFileNames[*n], token);
         (*n)++;
     }
+}
+
+char* createArgList(char* fileNameBase){
+    char buffer[100];
+    char indexAsString[10];
+    char** cmd = malloc(N+4*sizeof(char*));
+    for(int i = 0; i < N+4; i++){
+        cmd[i] = malloc(200*sizeof(char));
+    }
+    strcpy(cmd[0],"paste");
+    strcpy(cmd[1], "-d,");
+    for(int i = 0; i < N; i++){
+        sprintf(indexAsString, "%d", i);
+        strcpy(buffer, fileNameBase);
+        strcat(buffer, "_");
+        strcat(buffer, indexAsString);
+        strcpy(cmd[i+2], buffer);
+    }
+    cmd[N+2] = (char*)NULL;
+    int i = 0;
+    while(cmd[i] != NULL){
+        printf("%s\n", cmd[i]);
+        i++;
+    }
+    return cmd;
+}
+
+void runCmd(char** cmd, char* fileName){
+    int pid = fork();
+    if(pid == 0){
+        int fd = open(fileName, O_RDWR | O_CREAT);
+        dup2(fd, 1);
+        close(fd);
+        execv("/usr/bin/paste", cmd);
+    }
+    wait(NULL);
 }

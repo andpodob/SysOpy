@@ -10,6 +10,9 @@ int main(int argc, char** argv){
     if(argc == 4){
         if(strcmp(argv[3], "SINGLE") == 0)
             runProcessesOnList(argv[1], atoi(argv[2]), SINGLE);
+        if(strcmp(argv[3], "MULTIPLE") == 0)
+            runProcessesOnList(argv[1], atoi(argv[2]), MULTIPLE);
+
     }
 
 }
