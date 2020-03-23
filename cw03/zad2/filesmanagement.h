@@ -13,9 +13,9 @@
 
 
 int** loadMatrix(char* filename, int* rows, int* columns);
-void convertBinToTextFile(char* binFile, char* textFile);
+void writeRandomMatrixToFile(char* filename, int rows, int columns, int valueMin, int valueMax);
 void writeMatrixToFile(char* fileName, int** matrix, int rows, int columns);
-void writeMatrixToBinaryFile(char* fileName, int** matrix, int rows, int columns, int columnsToWrite, int startingIndex);
-
+void writeMatrixToTextFile(char* fileName, int** matrix, int rows, int columns, int columnsToWrite, int startingIndex);
+void removeWhiteSpaces(char* filename);
 
 #endif //CW03_FILESMANAGEMENT_H

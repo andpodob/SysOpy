@@ -15,5 +15,5 @@ int main(int argc, char** argv){
 //        printf("%d\n", matrix[i][columns-1]);
 //    }
 
-    runProcessesOnList("list", 2);
+    runProcessesOnList("list", 2, SINGLE);
 }

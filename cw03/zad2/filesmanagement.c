@@ -2,9 +2,28 @@
 // Created by andrz on 3/21/2020.
 //
 
-#include <fcntl.h>
 #include <unistd.h>
 #include "filesmanagement.h"
+
+
+void removeWhiteSpaces(char* filename){
+    FILE *f = fopen(filename, "r");
+    fseek(f, 0, SEEK_END);
+    long fsize = ftell(f);
+    fseek(f, 0, SEEK_SET);  /* same as rewind(f); */
+
+    char *string = malloc(fsize + 1);
+    fread(string, 1, fsize, f);
+    fclose(f);
+    string[fsize] = 0;
+
+    f = fopen(filename, "w");
+    char* token = strtok(string, " ");
+    while (token != NULL){
+        fwrite(token, sizeof(char),strlen(token), f);
+        token = strtok(NULL, " ");
+    }
+}
 
 int** loadMatrix(char* filename, int* rows, int* columns){
     char* buffer;
@@ -63,29 +82,43 @@ void writeMatrixToFile(char* fileName, int** matrix, int rows, int columns){
     fclose(fd);
 }
 
-void writeMatrixToBinaryFile(char* fileName, int** matrix, int rows, int columns, int columnsToWrite, int startingIndex){
-    int fd = open(fileName, O_CREAT | O_WRONLY, 0777);
-    if(fd == -1){
+void writeMatrixToTextFile(char* fileName, int** matrix, int rows, int columns, int columnsToWrite, int startingIndex){
+//    int fd = open(fileName, O_CREAT | O_WRONLY, 0777);
+    FILE* fd = fopen(fileName, "r+");
+    if(fd == NULL){
         return;
     }
-    char valueBuffer[31];
+    char valueBuffer[12];
     for(int i = 0; i < rows; i++){
-        lseek(fd,21*sizeof(char)*(i*columns+startingIndex),SEEK_SET);
+        fseek(fd,12*sizeof(char)*(i*columns+startingIndex),SEEK_SET);
         for(int j = startingIndex; j < startingIndex+columnsToWrite-1; j++){
-            sprintf(valueBuffer, "%20d,", matrix[i][j-startingIndex]);
-            write(fd,valueBuffer, 21*sizeof(char));
+            sprintf(valueBuffer, "%11d,", matrix[i][j-startingIndex]);
+            fwrite(valueBuffer, sizeof(char), 12, fd);
         }
         if(startingIndex+columnsToWrite == columns){
-            sprintf(valueBuffer, "%20d\n", matrix[i][columnsToWrite-1]);
-            write(fd,valueBuffer, 21*sizeof(char));
+            sprintf(valueBuffer, "%11d\n", matrix[i][columnsToWrite-1]);
+            fwrite(valueBuffer, sizeof(char), 12, fd);
         }else{
-            sprintf(valueBuffer, "%20d,", matrix[i][columnsToWrite-1]);
-            write(fd,valueBuffer, 21*sizeof(char));
+            sprintf(valueBuffer, "%11d,", matrix[i][columnsToWrite-1]);
+            fwrite(valueBuffer, sizeof(char), 12, fd);
         }
     }
+    fclose(fd);
 }
 
-void convertBinToTextFile(char* binFile, char* textFile){
-    int src = open(binFile, O_RDONLY);
-
+void writeRandomMatrixToFile(char* filename, int rows, int columns, int valueMin, int valueMax){
+    FILE* fd = fopen(filename, "w");
+    int width = abs(valueMax-valueMin);
+    int val;
+    char valueBuffer[12];
+    for(int i = 0; i < rows; i++){
+        for(int j = 0; j < columns-1; j++){
+            val = rand()%width+valueMin;
+            sprintf(valueBuffer, "%d,", val);
+            fwrite(valueBuffer, sizeof(char), strlen(valueBuffer), fd);
+        }
+        val = rand()%width+valueMin;
+        sprintf(valueBuffer, "%d\n", val);
+        fwrite(valueBuffer, sizeof(char), strlen(valueBuffer), fd);
+    }
 }
