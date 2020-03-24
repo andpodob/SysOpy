@@ -15,7 +15,7 @@ char* LIST;
 
 int processList(int outputType);
 void createOutputFiles(char** outputFileNames, int* n);
-char* createArgList(char* fileNameBase);
+char** createArgList(char* fileNameBase);
 void runCmd(char** cmd, char* outputFile);
 
 int runProcessesOnList(char* list, int n, int type) {
@@ -56,6 +56,10 @@ int runProcessesOnList(char* list, int n, int type) {
             for(int i = 0; i < N; i++){
                 remove(cmd[i+2]);
             }
+            free(outputFileNames[i]);
+        }
+        for(int i = 0; i < 200; i++){
+            free(cmd[i]);
         }
     }
 }
@@ -82,6 +86,10 @@ int processList(int type){
         matrixB = strtok(NULL, " \r\n");
         matrixC = strtok(NULL, " \r\n");
         matrixCwithSuffix = malloc((strlen(matrixC)+10)*sizeof(char));
+        strcpy(matrixCwithSuffix, matrixC);
+        strcat(matrixCwithSuffix, "_");
+        strcat(matrixCwithSuffix, indexAsString);
+
         intMatrixA = loadMatrix(matrixA, &aRows, &aCol);
         intMatrixB = loadMatrix(matrixB, &bRows, &bCol);
 
@@ -92,9 +100,6 @@ int processList(int type){
         if(bCol >= startingIndex+temp) {
             intMatrixC = multiplyMatrices(intMatrixA, intMatrixB, &cRows, &cCol, aRows, aCol, bRows, temp, startingIndex);
             if(type == MULTIPLE){
-                strcpy(matrixCwithSuffix, matrixC);
-                strcat(matrixCwithSuffix, "_");
-                strcat(matrixCwithSuffix, indexAsString);
                 writeMatrixToFile(matrixCwithSuffix, intMatrixC, cRows, cCol);
             } else{
                 //strcat(matrixCwithSuffix, "bin");
@@ -128,35 +133,37 @@ void createOutputFiles(char** outputFileNames, int* n){
     }
 }
 
-char* createArgList(char* fileNameBase){
+char** createArgList(char* fileNameBase){
     char buffer[100];
     char indexAsString[10];
-    char** cmd = malloc(N+4*sizeof(char*));
-    for(int i = 0; i < N+4; i++){
+    FILE* exists;
+    char** cmd = malloc(200*sizeof(char*));
+    for(int i = 0; i < 200; i++){
         cmd[i] = malloc(200*sizeof(char));
     }
     strcpy(cmd[0],"paste");
     strcpy(cmd[1], "-d,");
+    int j = 2;
     for(int i = 0; i < N; i++){
         sprintf(indexAsString, "%d", i);
         strcpy(buffer, fileNameBase);
         strcat(buffer, "_");
         strcat(buffer, indexAsString);
-        strcpy(cmd[i+2], buffer);
+        exists = fopen(buffer, "r");
+        if(exists != NULL) {
+            strcpy(cmd[j++], buffer);
+            fclose(exists);
+        }
     }
-    cmd[N+2] = (char*)NULL;
+    cmd[j] = (char*)NULL;
     int i = 0;
-    while(cmd[i] != NULL){
-        printf("%s\n", cmd[i]);
-        i++;
-    }
     return cmd;
 }
 
 void runCmd(char** cmd, char* fileName){
     int pid = fork();
     if(pid == 0){
-        int fd = open(fileName, O_RDWR | O_CREAT);
+        int fd = open(fileName, O_RDWR | O_CREAT, 0777);
         dup2(fd, 1);
         close(fd);
         execv("/usr/bin/paste", cmd);

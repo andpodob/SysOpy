@@ -40,12 +40,12 @@ for line in lines:
         result = np.array(list(csv.reader(csvfile)), dtype='int')
     
     correctResult = matrixA@matrixB
-    # if(np.array_equal(correctResult, result)):
-    #     # print(line)
-    #     # print("Correct")
-    # else:
-    #     # print(line)
-    #     # print("Failed")
+    if(np.array_equal(correctResult, result)):
+    	print(line)
+    	print("Correct")
+    else:
+    	print(line)
+    	print("Failed")
 
 p = subprocess.run(["rm","-r", "wyniki"])
 p = subprocess.run(["mkdir","wyniki"])

@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG   CMakeFiles/cw03.dir/zad2/macierz.c.o CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o CMakeFiles/cw03.dir/zad2/filesmanagement.c.o CMakeFiles/cw03.dir/zad2/matrixutils.c.o  -o cw03 

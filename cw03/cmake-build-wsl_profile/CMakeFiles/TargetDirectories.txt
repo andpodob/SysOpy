@@ -1,0 +1,3 @@
+/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles/cw03.dir
+/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles/edit_cache.dir

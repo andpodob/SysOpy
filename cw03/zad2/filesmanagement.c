@@ -88,7 +88,7 @@ void writeMatrixToTextFile(char* fileName, int** matrix, int rows, int columns, 
     if(fd == NULL){
         return;
     }
-    char valueBuffer[12];
+    char valueBuffer[13];
     for(int i = 0; i < rows; i++){
         fseek(fd,12*sizeof(char)*(i*columns+startingIndex),SEEK_SET);
         for(int j = startingIndex; j < startingIndex+columnsToWrite-1; j++){
