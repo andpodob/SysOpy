@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <fcntl.h>
+#include <time.h>
 #include "filesmanagement.h"
 #include "matrixutils.h"
 #include "processmanagement.h"
@@ -12,13 +13,16 @@
 int N = 0;
 int PROCESS_INDEX = 0;
 char* LIST;
+time_t start;
+int TIME_PER_PROCESS = 0;
 
 int processList(int outputType);
 void createOutputFiles(char** outputFileNames, int* n);
 char** createArgList(char* fileNameBase);
 void runCmd(char** cmd, char* outputFile);
 
-int runProcessesOnList(char* list, int n, int type) {
+int runProcessesOnList(char* list, int n, int type, int timePerProcess) {
+    TIME_PER_PROCESS = timePerProcess;
     LIST = list;
     N = n;
     int outputFilesCount = 0;
@@ -28,6 +32,7 @@ int runProcessesOnList(char* list, int n, int type) {
     int *childPids = malloc(n * sizeof(int));
     int *results = malloc(n * sizeof(int));
     int pid;
+    start = time(NULL);
     for (int i = 0; i < n; i++) {
         pid = fork();
         if (pid < 0) {
@@ -37,7 +42,6 @@ int runProcessesOnList(char* list, int n, int type) {
             PROCESS_INDEX++;
         } else {
             processList(type);
-            exit(0);
         }
     }
     //processList(SINGLE);
@@ -62,9 +66,14 @@ int runProcessesOnList(char* list, int n, int type) {
             free(cmd[i]);
         }
     }
+    for(int i = 0; i < N; i++){
+        printf("Process with PID: %d, solved: %d matrices\n",childPids[i], WEXITSTATUS(results[i]));
+    }
 }
 
 int processList(int type){
+    time_t stop;
+    time_t timeElapsed;
     char lines[100][100];
     char indexAsString[10];
     sprintf(indexAsString, "%d", PROCESS_INDEX);
@@ -82,6 +91,11 @@ int processList(int type){
     int** intMatrixA = NULL, **intMatrixB = NULL, **intMatrixC = NULL;
     int aRows, aCol, bRows, bCol, cRows, cCol, temp, startingIndex;
     for(int i = 0; i < linesCount; i++){
+        stop = time(NULL);
+        timeElapsed = (stop-start);
+        if(timeElapsed > TIME_PER_PROCESS){
+            exit(i);
+        }
         matrixA = strtok(lines[i], " \r\n");
         matrixB = strtok(NULL, " \r\n");
         matrixC = strtok(NULL, " \r\n");
@@ -102,7 +116,6 @@ int processList(int type){
             if(type == MULTIPLE){
                 writeMatrixToFile(matrixCwithSuffix, intMatrixC, cRows, cCol);
             } else{
-                //strcat(matrixCwithSuffix, "bin");
                 writeMatrixToTextFile(matrixC, intMatrixC, aRows, bCol, cCol, startingIndex);
             }
         }
@@ -113,6 +126,7 @@ int processList(int type){
         freeMatrix(intMatrixC, cRows);
         intMatrixC=NULL;
     }
+    exit(linesCount);
 }
 
 void createOutputFiles(char** outputFileNames, int* n){
@@ -156,7 +170,7 @@ char** createArgList(char* fileNameBase){
         }
     }
     cmd[j] = (char*)NULL;
-    int i = 0;
+
     return cmd;
 }
 

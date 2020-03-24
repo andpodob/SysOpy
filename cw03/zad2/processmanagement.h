@@ -7,6 +7,6 @@
 #define MULTIPLE 1
 #define SINGLE 2
 
-int runProcessesOnList(char* list, int n, int type);
+int runProcessesOnList(char* list, int n, int type, int timePerPorcess);
 
 #endif //CW03_PROCESSMANAGEMENT_H
