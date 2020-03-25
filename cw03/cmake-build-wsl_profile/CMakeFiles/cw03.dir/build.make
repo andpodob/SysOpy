@@ -57,116 +57,116 @@ include CMakeFiles/cw03.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cw03.dir/flags.make
 
-CMakeFiles/cw03.dir/zad2/macierz.c.o: CMakeFiles/cw03.dir/flags.make
-CMakeFiles/cw03.dir/zad2/macierz.c.o: ../zad2/macierz.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cw03.dir/zad2/macierz.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cw03.dir/zad2/macierz.c.o   -c /mnt/c/Users/andrz/CLionProjects/cw03/zad2/macierz.c
+CMakeFiles/cw03.dir/zad3/macierz.c.o: CMakeFiles/cw03.dir/flags.make
+CMakeFiles/cw03.dir/zad3/macierz.c.o: ../zad3/macierz.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cw03.dir/zad3/macierz.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cw03.dir/zad3/macierz.c.o   -c /mnt/c/Users/andrz/CLionProjects/cw03/zad3/macierz.c
 
-CMakeFiles/cw03.dir/zad2/macierz.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cw03.dir/zad2/macierz.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/andrz/CLionProjects/cw03/zad2/macierz.c > CMakeFiles/cw03.dir/zad2/macierz.c.i
+CMakeFiles/cw03.dir/zad3/macierz.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cw03.dir/zad3/macierz.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/andrz/CLionProjects/cw03/zad3/macierz.c > CMakeFiles/cw03.dir/zad3/macierz.c.i
 
-CMakeFiles/cw03.dir/zad2/macierz.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cw03.dir/zad2/macierz.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/andrz/CLionProjects/cw03/zad2/macierz.c -o CMakeFiles/cw03.dir/zad2/macierz.c.s
+CMakeFiles/cw03.dir/zad3/macierz.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cw03.dir/zad3/macierz.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/andrz/CLionProjects/cw03/zad3/macierz.c -o CMakeFiles/cw03.dir/zad3/macierz.c.s
 
-CMakeFiles/cw03.dir/zad2/macierz.c.o.requires:
+CMakeFiles/cw03.dir/zad3/macierz.c.o.requires:
 
-.PHONY : CMakeFiles/cw03.dir/zad2/macierz.c.o.requires
+.PHONY : CMakeFiles/cw03.dir/zad3/macierz.c.o.requires
 
-CMakeFiles/cw03.dir/zad2/macierz.c.o.provides: CMakeFiles/cw03.dir/zad2/macierz.c.o.requires
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/macierz.c.o.provides.build
-.PHONY : CMakeFiles/cw03.dir/zad2/macierz.c.o.provides
+CMakeFiles/cw03.dir/zad3/macierz.c.o.provides: CMakeFiles/cw03.dir/zad3/macierz.c.o.requires
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/macierz.c.o.provides.build
+.PHONY : CMakeFiles/cw03.dir/zad3/macierz.c.o.provides
 
-CMakeFiles/cw03.dir/zad2/macierz.c.o.provides.build: CMakeFiles/cw03.dir/zad2/macierz.c.o
-
-
-CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o: CMakeFiles/cw03.dir/flags.make
-CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o: ../zad2/proccessmanagment.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o   -c /mnt/c/Users/andrz/CLionProjects/cw03/zad2/proccessmanagment.c
-
-CMakeFiles/cw03.dir/zad2/proccessmanagment.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cw03.dir/zad2/proccessmanagment.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/andrz/CLionProjects/cw03/zad2/proccessmanagment.c > CMakeFiles/cw03.dir/zad2/proccessmanagment.c.i
-
-CMakeFiles/cw03.dir/zad2/proccessmanagment.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cw03.dir/zad2/proccessmanagment.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/andrz/CLionProjects/cw03/zad2/proccessmanagment.c -o CMakeFiles/cw03.dir/zad2/proccessmanagment.c.s
-
-CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o.requires:
-
-.PHONY : CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o.requires
-
-CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o.provides: CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o.requires
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o.provides.build
-.PHONY : CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o.provides
-
-CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o.provides.build: CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o
+CMakeFiles/cw03.dir/zad3/macierz.c.o.provides.build: CMakeFiles/cw03.dir/zad3/macierz.c.o
 
 
-CMakeFiles/cw03.dir/zad2/filesmanagement.c.o: CMakeFiles/cw03.dir/flags.make
-CMakeFiles/cw03.dir/zad2/filesmanagement.c.o: ../zad2/filesmanagement.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cw03.dir/zad2/filesmanagement.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cw03.dir/zad2/filesmanagement.c.o   -c /mnt/c/Users/andrz/CLionProjects/cw03/zad2/filesmanagement.c
+CMakeFiles/cw03.dir/zad3/filesmanagment.c.o: CMakeFiles/cw03.dir/flags.make
+CMakeFiles/cw03.dir/zad3/filesmanagment.c.o: ../zad3/filesmanagment.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cw03.dir/zad3/filesmanagment.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cw03.dir/zad3/filesmanagment.c.o   -c /mnt/c/Users/andrz/CLionProjects/cw03/zad3/filesmanagment.c
 
-CMakeFiles/cw03.dir/zad2/filesmanagement.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cw03.dir/zad2/filesmanagement.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/andrz/CLionProjects/cw03/zad2/filesmanagement.c > CMakeFiles/cw03.dir/zad2/filesmanagement.c.i
+CMakeFiles/cw03.dir/zad3/filesmanagment.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cw03.dir/zad3/filesmanagment.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/andrz/CLionProjects/cw03/zad3/filesmanagment.c > CMakeFiles/cw03.dir/zad3/filesmanagment.c.i
 
-CMakeFiles/cw03.dir/zad2/filesmanagement.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cw03.dir/zad2/filesmanagement.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/andrz/CLionProjects/cw03/zad2/filesmanagement.c -o CMakeFiles/cw03.dir/zad2/filesmanagement.c.s
+CMakeFiles/cw03.dir/zad3/filesmanagment.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cw03.dir/zad3/filesmanagment.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/andrz/CLionProjects/cw03/zad3/filesmanagment.c -o CMakeFiles/cw03.dir/zad3/filesmanagment.c.s
 
-CMakeFiles/cw03.dir/zad2/filesmanagement.c.o.requires:
+CMakeFiles/cw03.dir/zad3/filesmanagment.c.o.requires:
 
-.PHONY : CMakeFiles/cw03.dir/zad2/filesmanagement.c.o.requires
+.PHONY : CMakeFiles/cw03.dir/zad3/filesmanagment.c.o.requires
 
-CMakeFiles/cw03.dir/zad2/filesmanagement.c.o.provides: CMakeFiles/cw03.dir/zad2/filesmanagement.c.o.requires
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/filesmanagement.c.o.provides.build
-.PHONY : CMakeFiles/cw03.dir/zad2/filesmanagement.c.o.provides
+CMakeFiles/cw03.dir/zad3/filesmanagment.c.o.provides: CMakeFiles/cw03.dir/zad3/filesmanagment.c.o.requires
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/filesmanagment.c.o.provides.build
+.PHONY : CMakeFiles/cw03.dir/zad3/filesmanagment.c.o.provides
 
-CMakeFiles/cw03.dir/zad2/filesmanagement.c.o.provides.build: CMakeFiles/cw03.dir/zad2/filesmanagement.c.o
+CMakeFiles/cw03.dir/zad3/filesmanagment.c.o.provides.build: CMakeFiles/cw03.dir/zad3/filesmanagment.c.o
 
 
-CMakeFiles/cw03.dir/zad2/matrixutils.c.o: CMakeFiles/cw03.dir/flags.make
-CMakeFiles/cw03.dir/zad2/matrixutils.c.o: ../zad2/matrixutils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cw03.dir/zad2/matrixutils.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cw03.dir/zad2/matrixutils.c.o   -c /mnt/c/Users/andrz/CLionProjects/cw03/zad2/matrixutils.c
+CMakeFiles/cw03.dir/zad3/matrixutils.c.o: CMakeFiles/cw03.dir/flags.make
+CMakeFiles/cw03.dir/zad3/matrixutils.c.o: ../zad3/matrixutils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cw03.dir/zad3/matrixutils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cw03.dir/zad3/matrixutils.c.o   -c /mnt/c/Users/andrz/CLionProjects/cw03/zad3/matrixutils.c
 
-CMakeFiles/cw03.dir/zad2/matrixutils.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cw03.dir/zad2/matrixutils.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/andrz/CLionProjects/cw03/zad2/matrixutils.c > CMakeFiles/cw03.dir/zad2/matrixutils.c.i
+CMakeFiles/cw03.dir/zad3/matrixutils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cw03.dir/zad3/matrixutils.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/andrz/CLionProjects/cw03/zad3/matrixutils.c > CMakeFiles/cw03.dir/zad3/matrixutils.c.i
 
-CMakeFiles/cw03.dir/zad2/matrixutils.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cw03.dir/zad2/matrixutils.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/andrz/CLionProjects/cw03/zad2/matrixutils.c -o CMakeFiles/cw03.dir/zad2/matrixutils.c.s
+CMakeFiles/cw03.dir/zad3/matrixutils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cw03.dir/zad3/matrixutils.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/andrz/CLionProjects/cw03/zad3/matrixutils.c -o CMakeFiles/cw03.dir/zad3/matrixutils.c.s
 
-CMakeFiles/cw03.dir/zad2/matrixutils.c.o.requires:
+CMakeFiles/cw03.dir/zad3/matrixutils.c.o.requires:
 
-.PHONY : CMakeFiles/cw03.dir/zad2/matrixutils.c.o.requires
+.PHONY : CMakeFiles/cw03.dir/zad3/matrixutils.c.o.requires
 
-CMakeFiles/cw03.dir/zad2/matrixutils.c.o.provides: CMakeFiles/cw03.dir/zad2/matrixutils.c.o.requires
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/matrixutils.c.o.provides.build
-.PHONY : CMakeFiles/cw03.dir/zad2/matrixutils.c.o.provides
+CMakeFiles/cw03.dir/zad3/matrixutils.c.o.provides: CMakeFiles/cw03.dir/zad3/matrixutils.c.o.requires
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/matrixutils.c.o.provides.build
+.PHONY : CMakeFiles/cw03.dir/zad3/matrixutils.c.o.provides
 
-CMakeFiles/cw03.dir/zad2/matrixutils.c.o.provides.build: CMakeFiles/cw03.dir/zad2/matrixutils.c.o
+CMakeFiles/cw03.dir/zad3/matrixutils.c.o.provides.build: CMakeFiles/cw03.dir/zad3/matrixutils.c.o
+
+
+CMakeFiles/cw03.dir/zad3/processmanagment.c.o: CMakeFiles/cw03.dir/flags.make
+CMakeFiles/cw03.dir/zad3/processmanagment.c.o: ../zad3/processmanagment.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cw03.dir/zad3/processmanagment.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cw03.dir/zad3/processmanagment.c.o   -c /mnt/c/Users/andrz/CLionProjects/cw03/zad3/processmanagment.c
+
+CMakeFiles/cw03.dir/zad3/processmanagment.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cw03.dir/zad3/processmanagment.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/andrz/CLionProjects/cw03/zad3/processmanagment.c > CMakeFiles/cw03.dir/zad3/processmanagment.c.i
+
+CMakeFiles/cw03.dir/zad3/processmanagment.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cw03.dir/zad3/processmanagment.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/andrz/CLionProjects/cw03/zad3/processmanagment.c -o CMakeFiles/cw03.dir/zad3/processmanagment.c.s
+
+CMakeFiles/cw03.dir/zad3/processmanagment.c.o.requires:
+
+.PHONY : CMakeFiles/cw03.dir/zad3/processmanagment.c.o.requires
+
+CMakeFiles/cw03.dir/zad3/processmanagment.c.o.provides: CMakeFiles/cw03.dir/zad3/processmanagment.c.o.requires
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/processmanagment.c.o.provides.build
+.PHONY : CMakeFiles/cw03.dir/zad3/processmanagment.c.o.provides
+
+CMakeFiles/cw03.dir/zad3/processmanagment.c.o.provides.build: CMakeFiles/cw03.dir/zad3/processmanagment.c.o
 
 
 # Object files for target cw03
 cw03_OBJECTS = \
-"CMakeFiles/cw03.dir/zad2/macierz.c.o" \
-"CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o" \
-"CMakeFiles/cw03.dir/zad2/filesmanagement.c.o" \
-"CMakeFiles/cw03.dir/zad2/matrixutils.c.o"
+"CMakeFiles/cw03.dir/zad3/macierz.c.o" \
+"CMakeFiles/cw03.dir/zad3/filesmanagment.c.o" \
+"CMakeFiles/cw03.dir/zad3/matrixutils.c.o" \
+"CMakeFiles/cw03.dir/zad3/processmanagment.c.o"
 
 # External object files for target cw03
 cw03_EXTERNAL_OBJECTS =
 
-cw03: CMakeFiles/cw03.dir/zad2/macierz.c.o
-cw03: CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o
-cw03: CMakeFiles/cw03.dir/zad2/filesmanagement.c.o
-cw03: CMakeFiles/cw03.dir/zad2/matrixutils.c.o
+cw03: CMakeFiles/cw03.dir/zad3/macierz.c.o
+cw03: CMakeFiles/cw03.dir/zad3/filesmanagment.c.o
+cw03: CMakeFiles/cw03.dir/zad3/matrixutils.c.o
+cw03: CMakeFiles/cw03.dir/zad3/processmanagment.c.o
 cw03: CMakeFiles/cw03.dir/build.make
 cw03: CMakeFiles/cw03.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable cw03"
@@ -177,10 +177,10 @@ CMakeFiles/cw03.dir/build: cw03
 
 .PHONY : CMakeFiles/cw03.dir/build
 
-CMakeFiles/cw03.dir/requires: CMakeFiles/cw03.dir/zad2/macierz.c.o.requires
-CMakeFiles/cw03.dir/requires: CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o.requires
-CMakeFiles/cw03.dir/requires: CMakeFiles/cw03.dir/zad2/filesmanagement.c.o.requires
-CMakeFiles/cw03.dir/requires: CMakeFiles/cw03.dir/zad2/matrixutils.c.o.requires
+CMakeFiles/cw03.dir/requires: CMakeFiles/cw03.dir/zad3/macierz.c.o.requires
+CMakeFiles/cw03.dir/requires: CMakeFiles/cw03.dir/zad3/filesmanagment.c.o.requires
+CMakeFiles/cw03.dir/requires: CMakeFiles/cw03.dir/zad3/matrixutils.c.o.requires
+CMakeFiles/cw03.dir/requires: CMakeFiles/cw03.dir/zad3/processmanagment.c.o.requires
 
 .PHONY : CMakeFiles/cw03.dir/requires
 

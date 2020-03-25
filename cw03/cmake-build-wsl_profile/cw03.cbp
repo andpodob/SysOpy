@@ -78,25 +78,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad2/filesmanagement.c">
+		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad3/filesmanagment.c">
 			<Option target="cw03"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad2/filesmanagement.h">
+		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad3/filesmanagment.h">
 			<Option target="cw03"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad2/macierz.c">
+		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad3/macierz.c">
 			<Option target="cw03"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad2/matrixutils.c">
+		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad3/matrixutils.c">
 			<Option target="cw03"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad2/matrixutils.h">
+		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad3/matrixutils.h">
 			<Option target="cw03"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad2/proccessmanagment.c">
+		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad3/processmanagment.c">
 			<Option target="cw03"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad2/processmanagement.h">
+		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/zad3/processmanagment.h">
 			<Option target="cw03"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/andrz/CLionProjects/cw03/CMakeLists.txt">

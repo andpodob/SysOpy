@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cw03.dir/zad2/macierz.c.o"
-  "CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o"
-  "CMakeFiles/cw03.dir/zad2/filesmanagement.c.o"
-  "CMakeFiles/cw03.dir/zad2/matrixutils.c.o"
+  "CMakeFiles/cw03.dir/zad3/macierz.c.o"
+  "CMakeFiles/cw03.dir/zad3/filesmanagment.c.o"
+  "CMakeFiles/cw03.dir/zad3/matrixutils.c.o"
+  "CMakeFiles/cw03.dir/zad3/processmanagment.c.o"
   "cw03.pdb"
   "cw03"
 )

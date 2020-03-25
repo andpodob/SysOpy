@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/c/Users/andrz/CLionProjects/cw03/zad2/filesmanagement.c" "/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles/cw03.dir/zad2/filesmanagement.c.o"
-  "/mnt/c/Users/andrz/CLionProjects/cw03/zad2/macierz.c" "/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles/cw03.dir/zad2/macierz.c.o"
-  "/mnt/c/Users/andrz/CLionProjects/cw03/zad2/matrixutils.c" "/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles/cw03.dir/zad2/matrixutils.c.o"
-  "/mnt/c/Users/andrz/CLionProjects/cw03/zad2/proccessmanagment.c" "/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o"
+  "/mnt/c/Users/andrz/CLionProjects/cw03/zad3/filesmanagment.c" "/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles/cw03.dir/zad3/filesmanagment.c.o"
+  "/mnt/c/Users/andrz/CLionProjects/cw03/zad3/macierz.c" "/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles/cw03.dir/zad3/macierz.c.o"
+  "/mnt/c/Users/andrz/CLionProjects/cw03/zad3/matrixutils.c" "/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles/cw03.dir/zad3/matrixutils.c.o"
+  "/mnt/c/Users/andrz/CLionProjects/cw03/zad3/processmanagment.c" "/mnt/c/Users/andrz/CLionProjects/cw03/cmake-build-wsl_profile/CMakeFiles/cw03.dir/zad3/processmanagment.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

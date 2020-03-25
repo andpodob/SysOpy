@@ -123,113 +123,113 @@ cw03/fast:
 	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/build
 .PHONY : cw03/fast
 
-zad2/filesmanagement.o: zad2/filesmanagement.c.o
+zad3/filesmanagment.o: zad3/filesmanagment.c.o
 
-.PHONY : zad2/filesmanagement.o
-
-# target to build an object file
-zad2/filesmanagement.c.o:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/filesmanagement.c.o
-.PHONY : zad2/filesmanagement.c.o
-
-zad2/filesmanagement.i: zad2/filesmanagement.c.i
-
-.PHONY : zad2/filesmanagement.i
-
-# target to preprocess a source file
-zad2/filesmanagement.c.i:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/filesmanagement.c.i
-.PHONY : zad2/filesmanagement.c.i
-
-zad2/filesmanagement.s: zad2/filesmanagement.c.s
-
-.PHONY : zad2/filesmanagement.s
-
-# target to generate assembly for a file
-zad2/filesmanagement.c.s:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/filesmanagement.c.s
-.PHONY : zad2/filesmanagement.c.s
-
-zad2/macierz.o: zad2/macierz.c.o
-
-.PHONY : zad2/macierz.o
+.PHONY : zad3/filesmanagment.o
 
 # target to build an object file
-zad2/macierz.c.o:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/macierz.c.o
-.PHONY : zad2/macierz.c.o
+zad3/filesmanagment.c.o:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/filesmanagment.c.o
+.PHONY : zad3/filesmanagment.c.o
 
-zad2/macierz.i: zad2/macierz.c.i
+zad3/filesmanagment.i: zad3/filesmanagment.c.i
 
-.PHONY : zad2/macierz.i
+.PHONY : zad3/filesmanagment.i
 
 # target to preprocess a source file
-zad2/macierz.c.i:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/macierz.c.i
-.PHONY : zad2/macierz.c.i
+zad3/filesmanagment.c.i:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/filesmanagment.c.i
+.PHONY : zad3/filesmanagment.c.i
 
-zad2/macierz.s: zad2/macierz.c.s
+zad3/filesmanagment.s: zad3/filesmanagment.c.s
 
-.PHONY : zad2/macierz.s
+.PHONY : zad3/filesmanagment.s
 
 # target to generate assembly for a file
-zad2/macierz.c.s:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/macierz.c.s
-.PHONY : zad2/macierz.c.s
+zad3/filesmanagment.c.s:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/filesmanagment.c.s
+.PHONY : zad3/filesmanagment.c.s
 
-zad2/matrixutils.o: zad2/matrixutils.c.o
+zad3/macierz.o: zad3/macierz.c.o
 
-.PHONY : zad2/matrixutils.o
+.PHONY : zad3/macierz.o
 
 # target to build an object file
-zad2/matrixutils.c.o:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/matrixutils.c.o
-.PHONY : zad2/matrixutils.c.o
+zad3/macierz.c.o:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/macierz.c.o
+.PHONY : zad3/macierz.c.o
 
-zad2/matrixutils.i: zad2/matrixutils.c.i
+zad3/macierz.i: zad3/macierz.c.i
 
-.PHONY : zad2/matrixutils.i
+.PHONY : zad3/macierz.i
 
 # target to preprocess a source file
-zad2/matrixutils.c.i:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/matrixutils.c.i
-.PHONY : zad2/matrixutils.c.i
+zad3/macierz.c.i:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/macierz.c.i
+.PHONY : zad3/macierz.c.i
 
-zad2/matrixutils.s: zad2/matrixutils.c.s
+zad3/macierz.s: zad3/macierz.c.s
 
-.PHONY : zad2/matrixutils.s
+.PHONY : zad3/macierz.s
 
 # target to generate assembly for a file
-zad2/matrixutils.c.s:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/matrixutils.c.s
-.PHONY : zad2/matrixutils.c.s
+zad3/macierz.c.s:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/macierz.c.s
+.PHONY : zad3/macierz.c.s
 
-zad2/proccessmanagment.o: zad2/proccessmanagment.c.o
+zad3/matrixutils.o: zad3/matrixutils.c.o
 
-.PHONY : zad2/proccessmanagment.o
+.PHONY : zad3/matrixutils.o
 
 # target to build an object file
-zad2/proccessmanagment.c.o:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/proccessmanagment.c.o
-.PHONY : zad2/proccessmanagment.c.o
+zad3/matrixutils.c.o:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/matrixutils.c.o
+.PHONY : zad3/matrixutils.c.o
 
-zad2/proccessmanagment.i: zad2/proccessmanagment.c.i
+zad3/matrixutils.i: zad3/matrixutils.c.i
 
-.PHONY : zad2/proccessmanagment.i
+.PHONY : zad3/matrixutils.i
 
 # target to preprocess a source file
-zad2/proccessmanagment.c.i:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/proccessmanagment.c.i
-.PHONY : zad2/proccessmanagment.c.i
+zad3/matrixutils.c.i:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/matrixutils.c.i
+.PHONY : zad3/matrixutils.c.i
 
-zad2/proccessmanagment.s: zad2/proccessmanagment.c.s
+zad3/matrixutils.s: zad3/matrixutils.c.s
 
-.PHONY : zad2/proccessmanagment.s
+.PHONY : zad3/matrixutils.s
 
 # target to generate assembly for a file
-zad2/proccessmanagment.c.s:
-	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad2/proccessmanagment.c.s
-.PHONY : zad2/proccessmanagment.c.s
+zad3/matrixutils.c.s:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/matrixutils.c.s
+.PHONY : zad3/matrixutils.c.s
+
+zad3/processmanagment.o: zad3/processmanagment.c.o
+
+.PHONY : zad3/processmanagment.o
+
+# target to build an object file
+zad3/processmanagment.c.o:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/processmanagment.c.o
+.PHONY : zad3/processmanagment.c.o
+
+zad3/processmanagment.i: zad3/processmanagment.c.i
+
+.PHONY : zad3/processmanagment.i
+
+# target to preprocess a source file
+zad3/processmanagment.c.i:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/processmanagment.c.i
+.PHONY : zad3/processmanagment.c.i
+
+zad3/processmanagment.s: zad3/processmanagment.c.s
+
+.PHONY : zad3/processmanagment.s
+
+# target to generate assembly for a file
+zad3/processmanagment.c.s:
+	$(MAKE) -f CMakeFiles/cw03.dir/build.make CMakeFiles/cw03.dir/zad3/processmanagment.c.s
+.PHONY : zad3/processmanagment.c.s
 
 # Help Target
 help:
@@ -240,18 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... cw03"
 	@echo "... edit_cache"
-	@echo "... zad2/filesmanagement.o"
-	@echo "... zad2/filesmanagement.i"
-	@echo "... zad2/filesmanagement.s"
-	@echo "... zad2/macierz.o"
-	@echo "... zad2/macierz.i"
-	@echo "... zad2/macierz.s"
-	@echo "... zad2/matrixutils.o"
-	@echo "... zad2/matrixutils.i"
-	@echo "... zad2/matrixutils.s"
-	@echo "... zad2/proccessmanagment.o"
-	@echo "... zad2/proccessmanagment.i"
-	@echo "... zad2/proccessmanagment.s"
+	@echo "... zad3/filesmanagment.o"
+	@echo "... zad3/filesmanagment.i"
+	@echo "... zad3/filesmanagment.s"
+	@echo "... zad3/macierz.o"
+	@echo "... zad3/macierz.i"
+	@echo "... zad3/macierz.s"
+	@echo "... zad3/matrixutils.o"
+	@echo "... zad3/matrixutils.i"
+	@echo "... zad3/matrixutils.s"
+	@echo "... zad3/processmanagment.o"
+	@echo "... zad3/processmanagment.i"
+	@echo "... zad3/processmanagment.s"
 .PHONY : help
 
 
